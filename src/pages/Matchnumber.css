@@ -1,0 +1,64 @@
+.md body {
+  --ion-background-color: #684a61;
+}
+
+.card-footer {
+  background-color: #684a61;
+  border-radius: 30px;
+}
+
+.btn-back {
+  margin-left: 25px;
+}
+
+.btn-next {
+  margin-left: 75px;
+}
+
+p.quiz {
+  color: black;
+  margin-left: 10px;
+  font-size: 22px;
+}
+
+.img-answer {
+  width: 100%;
+}
+
+.img-quiz {
+  max-height: 150px;
+  width: 245px;
+  border-radius: 30px;
+}
+
+.bg-quiz {
+  width: 80px;
+  height: 60px;
+  background-color: gray;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 15px;
+}
+
+.wrap {
+  display: flex;
+  padding: 10px;
+  margin-top: 0px;
+}
+
+.img-backarrow {
+  width: 20%;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-around;
+}
