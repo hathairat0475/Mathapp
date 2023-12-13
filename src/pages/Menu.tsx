@@ -5,13 +5,13 @@ import game from '../assets/images/game.png'
 import burger from '../assets/images/burger.png'
 const Menu: React.FC = () => {
     return (
-        
-        <IonPage>
+   
+        <IonPage style={{paddingBottom: "5cm"}}>
             <IonHeader>
                 <IonToolbar style={{backgroundColor: '#DDBD69'}}>
                     
                 <IonText>
-                    <h1>MENU</h1> 
+                    <h1 style={{color: "white" , padding: "10px"}}>MENU</h1> 
                     <img src={burger} alt="" width={"80"} height={"80"}  />             
                  </IonText>
             
@@ -25,8 +25,8 @@ const Menu: React.FC = () => {
                     <IonCardTitle>
                         <div className='ion-text-center'>
                      <IonText>
-                        <h3 color="warning">แบบฝึกหัด</h3> 
-                      <img src={notebook} alt="" width={"80"} height={"80"}  />              
+                        <h3 color="warning" style={{marginRight: "120px"}}>แบบฝึกหัด</h3> 
+                      <img src={notebook} alt="notebook" style={{marginRight: "30px"}} width={"50"} height={"50"}  />              
                     </IonText>                          
                         </div>
                     </IonCardTitle>
@@ -39,8 +39,8 @@ const Menu: React.FC = () => {
                     <IonCardTitle>
                         <div className='ion-text-center'>
                      <IonText>
-                        <h2 color="warning">เกม</h2> 
-                      <img src={game} alt="" width={"80"} height={"80"}   />             
+                        <h2 color="warning" style={{marginRight: "150px"}}>เกมภาพกับตัวเลข</h2> 
+                      <img src={game} alt="game" style={{marginRight: "30px"}}  width={"50"} height={"50"}   />             
                     </IonText>                          
                         </div>
                     </IonCardTitle>
@@ -48,6 +48,7 @@ const Menu: React.FC = () => {
             </IonCard>
             
         </IonPage>
+   
     );
 };
 

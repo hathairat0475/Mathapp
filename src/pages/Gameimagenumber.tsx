@@ -75,7 +75,7 @@ const Gameimagenumber: React.FC = () => {
                     </div>
                 </div>
             </IonCard>
-                <h1 className='ion-text-center'>{score}</h1>
+                <h1 className='ion-text-center'>คะแนน {score}</h1>
                 <IonCard className='card-footer' style={{ backgroundColor: '#DDBD69' }}>
                     <IonCardHeader>
                         <IonCardTitle class='bottom'>
@@ -91,6 +91,8 @@ const Gameimagenumber: React.FC = () => {
                         </IonCardTitle>
                     </IonCardHeader>
                 </IonCard>
+                {/* Button Down */}
+                <IonButton style={{ color: "white", padding: "8px" }} href="/menu" fill="clear" className="btn-down" >กลับหน้าเมนู</IonButton>
             </div> : <div>{answer ? <IonPage>
 
                 <IonCard style={{ backgroundColor: '#DDBD69' }} className='card'>
@@ -98,7 +100,7 @@ const Gameimagenumber: React.FC = () => {
                         <IonCardTitle>
 
                             <div className="icon-text-center">
-                                <img src={correct} alt="" />
+                                <img src={correct} alt="" style={{marginLeft: "40px"}} />
                             </div>
 
                         </IonCardTitle>
@@ -109,7 +111,7 @@ const Gameimagenumber: React.FC = () => {
                     </IonCardContent>
                 </IonCard>
                 <IonButton onClick={nextPage} fill='clear' color="dark">
-                    <img className='btn-next' src={next} alt="" style={{ width: '40px' }} />
+                    <img className='btn-next' src={next} alt="" style={{marginLeft: "30px", width: "40px", height: "40px" }} />
                 </IonButton>
                 {/* <IonButton className='button'>Test</IonButton> */}
 
@@ -120,7 +122,7 @@ const Gameimagenumber: React.FC = () => {
                         <IonCardTitle>
 
                             <div className="icon-text-center">
-                                <img src={wrong} alt="" />
+                                <img src={wrong} alt="" style={{marginLeft: "40px"}} />
                             </div>
 
                         </IonCardTitle>
@@ -131,7 +133,7 @@ const Gameimagenumber: React.FC = () => {
                     </IonCardContent>
                 </IonCard>
                 <IonButton onClick={reloadpage} fill='clear' color="dark">
-                    <img className='btn-next' src={back} alt="" style={{ width: '40px' }} />
+                    <img className='btn-next' src={back} alt="" style={{ marginLeft: "30px", width: "40px", height: "40px" }} />
                 </IonButton>
                 {/* <IonButton className='button'>Test</IonButton> */}
 

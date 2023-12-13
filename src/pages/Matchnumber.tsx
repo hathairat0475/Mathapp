@@ -104,7 +104,7 @@ const Matchnumber: React.FC = () => {
               </div>
             </div>
           </IonCard>
-          <h1 className="ion-text-center">{score}</h1>
+          <h1 className="ion-text-center">คะแนน {score}</h1>
           <IonCard
             className="card-footer"
             style={{ backgroundColor: "#DDBD69", display: "flex" }}
@@ -135,6 +135,8 @@ const Matchnumber: React.FC = () => {
               </IonCardTitle>
             </IonCardHeader>
           </IonCard>
+          {/* Button Down */}
+        <IonButton style={{ color: "white", padding: "8px"}} href="/menu" fill="clear" className="btn-down" >กลับหน้าเมนู</IonButton>
         </div>
       ) : (
         <div>
@@ -144,7 +146,7 @@ const Matchnumber: React.FC = () => {
                 <IonCardHeader>
                   <IonCardTitle>
                     <div className="icon-text-center">
-                      <img src={correct} alt="" />
+                      <img src={correct} alt="" style={{marginLeft: "40px"}} />
                     </div>
                   </IonCardTitle>
                 </IonCardHeader>
@@ -155,8 +157,8 @@ const Matchnumber: React.FC = () => {
                 <img
                   className="btn-next"
                   src={next}
-                  alt=""
-                  style={{ width: "40px" }}
+                  alt="" 
+                  style={{ marginLeft: "30px", width: "40px", height: "40px" }}
                 />
               </IonButton>
               {/* <IonButton className='button'>Test</IonButton> */}
@@ -167,7 +169,7 @@ const Matchnumber: React.FC = () => {
                 <IonCardHeader>
                   <IonCardTitle>
                     <div className="icon-text-center">
-                      <img src={wrong} alt="" />
+                      <img src={wrong} alt="" style={{marginLeft: "40px"}} />
                     </div>
                   </IonCardTitle>
                 </IonCardHeader>
@@ -179,15 +181,19 @@ const Matchnumber: React.FC = () => {
                   className="btn-next"
                   src={back}
                   alt=""
-                  style={{ width: "40px" }}
+                  style={{ marginLeft: "30px", width: "40px", height: "40px" }}
                 />
               </IonButton>
               {/* <IonButton className='button'>Test</IonButton> */}
             </IonPage>
+
           )}
         </div>
       )}
+      
     </IonPage>
+
+    
   );
 };
 

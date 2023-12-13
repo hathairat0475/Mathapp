@@ -9,7 +9,7 @@ import Exercise from './pages/Exercise';
 import Gameimagenumber from './pages/Gameimagenumber';
 import Matchnumber from './pages/Matchnumber';
 import Numbercount from './pages/Numbercount';
-import Numberscolors from './pages/Numberscolors';
+import Numbersinvisible from './pages/Numbersinvisible';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -66,9 +66,9 @@ const App: React.FC = () => (
           <Redirect to="/Numbercount" />
         </Route>
 
-        <Route exact path='/Numberscolors'>
-          <Numberscolors />
-          <Redirect to="/Numberscolors" />
+        <Route exact path='/Numbersinvisible'>
+          <Numbersinvisible />
+          <Redirect to="/Numbersinvisible" />
         </Route>
 
         <Route exact path='/correct'>

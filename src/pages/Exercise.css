@@ -17,6 +17,10 @@ ion-title {
     margin-left: 30px;
 }
 
+.btn-down {
+    margin-top: 600px;
+}
+
 ion-text img {
     width: 50px;
     margin-top: -35px;
